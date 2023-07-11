@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Lyonell Martínez</span>, Desarrollador Web</h2>
+                <p class="descripcion"> </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+
+        <label for="toogle" id="label_toogle"><i class="fa-solid fa-moon"></i></label>
+        <input type="checkbox" id="toogle">
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Lyonell Martínez</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Estudié en el bootcamp de Acamdelo y elaboré proyectos, se hizo el uso de APIS React.js, tambien desarrollé 
+                logica de programación atraves de ejercicios en el lenguaje de javascrip.
+                <br>
+                <img class="img" src="icons8-aprendizaje-100.png" alt=""> 
+                <img class="img" src="icons8-formación-96.png" alt="">
+                <img class="img" src="icons8-computadora-96.png" alt=""> <br>
+                Como framework aprendí React.js, la usé para 
+                elaborar una paguína con el uso de API para mostrar frases aleatorias.
+                tambien entramos en el multiuniverso Rick and Morty con la presentación de varios personajes,
+                mostrando si seguía con vida o no y que dimensión pertenece. <br>
+                <img class="ima" src="icons8-online-coding-96.png" alt="">
+                <img class="ima" src="icons8-website-bug-96.png" alt="">
+            </p>
+            
+            <a href="Lyonell Martinez CV.pdf" download="CV Genesis Morales Vareles">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Arreglo de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                </ul>
+                <p>Con Html, CSS, J.S, modificaciones o cambios de diseño, bugs</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Creación de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                </ul>
+                <p>Creación de sitio web con React.js y uso de API's, arreglos de bug</p>
+            </div>
+
+        </div>
+        <div class="fila">
+
+
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">100 Horas</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">125 Horas</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>React.js</p>
+                <span class="porcentaje">150 Horas</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Node.js</p>
+                <span class="porcentaje">75 Horas</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <a href="https://sparkly-lollipop-027149.netlify.app" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto1.jpg" alt="">
+                    <div class="info">
+                        <h4>Ricky and Morty</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://regal-malasada-b22982.netlify.app" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto2.jpg" alt="">
+                    <div class="info">
+                        <h4>Pokedex</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://randomphrases10.netlify.app" target="_blank">
+                    <div class="overlay"></div>
+                    <img src="img/proyecto3.jpg" alt="">
+                    <div class="info">
+                        <h4>Random Phrases</h4>
+                </a>
+            </div>
+
+        </div>
+        </div>
+        <div class="fila">
+
+            <div class="proyecto">
+                <a href="https://timely-maamoul-084f4a.netlify.app" target="_blank">
+
+                    <div class="overlay"></div>
+                    <img src="img/proyecto4.jpg" alt="">
+                    <div class="info">
+                        <h4>User's CRUD</h4>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactamé</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/martines_12_97@hotmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" name="name" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" name="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="subject" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea id="coments" name="coments" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

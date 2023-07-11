@@ -1,0 +1,17 @@
+#toogle{
+    display: none;
+}
+
+#label_toogle{
+    position: absolute;
+    right: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+    transition: all 1.5s ease;
+}
